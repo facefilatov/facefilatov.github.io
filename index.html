@@ -1,763 +1,1905 @@
-<link rel="stylesheet" type="text/css" href="https://assets.tumblr.com/fonts/avalon/stylesheet.css?v=1">
 <!DOCTYPE html>
-<script>
-var __pbpa = true;
-</script>
-<script>
-var translated_warning_string = 'Warning: Never enter your Tumblr password unless \u201chttps://www.tumblr.com/login\u201d\x0ais the address in your web browser.\x0a\x0aYou should also see a green \u201cTumblr, Inc.\u201d identification in the address bar.\x0a\x0aSpammers and other bad guys use fake forms to steal passwords.\x0a\x0aTumblr will never ask you to log in from a user\u2019s blog.\x0a\x0aAre you absolutely sure you want to continue?';
-</script>
-<script type="text/javascript" language="javascript" src="https://assets.tumblr.com/assets/scripts/pre_tumblelog.js?_v=b9f848c06fcba7eaf305d4a7cb7a1b98"></script>
-<title>facefilatov</title>
-<meta name="Description" content="facefilatov Kirill Filatov's Studio">
-<style>
-figure {
-    margin:0
-}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kirill Filatov's Studio - Design portfolio showcasing website evolution from 2010-2019">
+    <title>facefilatov - Kirill Filatov's Studio</title>
+    <link rel="icon" href="https://24.media.tumblr.com/avatar_9044801d93f3_40.png">
+    
+    <style>
+        /* ========================================
+           CSS Variables & Reset
+           ======================================== */
 
-.tmblr-iframe {
-    position:absolute
-}
+        :root {
+            --color-bg: #333333;
+            --color-text: #333333;
+            --color-text-light: #777777;
+            --color-white: #ffffff;
+            --color-bg-light: rgba(51, 51, 51, 0.7);
+            --color-bg-topbar: #2c3038;
+            --color-bg-address: rgba(255, 255, 255, 0.1);
+            
+            --font-regular: 'Neo Sans Pro Regular', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            --font-light: 'Neo Sans Pro Light', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            
+            --spacing-xs: 7px;
+            --spacing-sm: 15px;
+            --spacing-md: 20px;
+            --spacing-lg: 30px;
+            --spacing-xl: 60px;
+            
+            --radius-sm: 3px;
+            --radius-md: 5px;
+            --radius-lg: 6px;
+            
+            --transition-fast: 0.2s ease-out;
+            --shadow-browser: 0 30px 140px -50px rgba(44, 48, 56, 0.5);
+        }
 
-.tmblr-iframe.hide {
-    display:none
-}
+        /* Custom Fonts */
+        @font-face {
+            font-family: 'Neo Sans Pro Regular';
+            src: local("NeoSansPro-Regular");
+            src: url(https://static.tumblr.com/afp24xm/rCSpnda0b/neosanspro-regular.ttf);
+            font-display: swap;
+        }
 
-.tmblr-iframe--amp-cta-button {
-    visibility: hidden;
-    position: fixed;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index:100
-}
+        @font-face {
+            font-family: 'Neo Sans Pro Light';
+            src: local("NeoSansPro-Light");
+            src: url(https://static.tumblr.com/afp24xm/5EJpnda3c/neosanspro-light.ttf);
+            font-display: swap;
+        }
 
-.tmblr-iframe--amp-cta-button.tmblr-iframe--loaded {
-    visibility: visible;
-    animation: iframe-app-cta-transition .2s ease-out
-}
-</style>
-<link rel="stylesheet" media="screen" href="https://assets.tumblr.com/client/prod/standalone/blog-network-npf/index.build.css?_v=f085dde138e244526309d4673db67b4c">
-<link rel="icon" href="https://24.media.tumblr.com/avatar_9044801d93f3_40.png">
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-(function(m, e, t, r, i, k, a) {
-    m[i] = m[i] || function() {
-        (m[i].a = m[i].a || []).push(arguments)
-    };
-    m[i].l = 1 * new Date();
-    k = e.createElement(t),
-    a = e.getElementsByTagName(t)[0],
-    k.async = 1,
-    k.src = r,
-    a.parentNode.insertBefore(k, a)
-})
-(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        /* Reset & Base */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-ym(2520193, "init", {
-    id: 2520193,
-    clickmap: true,
-    trackLinks: true,
-    accurateTrackBounce: true,
-    trackHash: true
-});
-</script>
-<noscript>
-    <div>
-        <img src="https://mc.yandex.ru/watch/2520193" style="position:absolute; left:-9999px;" alt=""/>
-    </div>
-</noscript>
-<!-- /Yandex.Metrika counter -->
-<script src="https://static.tumblr.com/afp24xm/ZLlpndabz/jquery.min.js"></script>
-<script src="https://static.tumblr.com/afp24xm/Imepnjlqp/lazy_load.js"></script>
-<!--Верхние два скрипта – с внутреннего FTP. Нижние два – с внешнего источника для корректной работы в редакторе tumblr -->
-<!--
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery_lazyload/1.9.7/jquery.lazyload.js"></script>
--->
-<script type="text/javascript" charset="utf-8">
-$(window).ready(function() {
-    $("img.lazy").lazyload();
-});
-</script>
-<style>
-@font-face {
-    font-family: 'Neo Sans Pro Regular';
-    src: local("NeoSansPro-Regular");
-    src: url(https://static.tumblr.com/afp24xm/rCSpnda0b/neosanspro-regular.ttf);
-}
+        html {
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
 
-@font-face {
-    font-family: 'Neo Sans Pro Light';
-    src: local("NeoSansPro-Light");
-    src: url(https://static.tumblr.com/afp24xm/5EJpnda3c/neosanspro-light.ttf);
-}
+        body {
+            background-image: url(https://static.tumblr.com/l3dtuf9/nsskzr0jd/bg_tile.gif);
+            background-repeat: repeat;
+            background-color: var(--color-bg);
+            background-position: center;
+            font-family: var(--font-regular);
+            color: var(--color-text);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
 
-body {
-    background-image: url(//static.tumblr.com/l3dtuf9/nsskzr0jd/bg_tile.gif);
-    background-repeat: repeat;
-    background-color: #333333;
-    background-position: center;
-    font-family: 'Neo Sans Pro Regular';
-    color: #333333;
-    cursor: default;
-}
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
 
-a {
-    color: #333333;
-    cursor: default;
-    text-decoration: none;
-    font-family: 'Neo Sans Pro Light';
-    font-size: 16pt;
-    text-decoration: underline;
-}
+        a {
+            color: var(--color-text);
+            text-decoration: underline;
+            font-family: var(--font-light);
+            font-size: 1rem;
+            transition: color var(--transition-fast);
+        }
 
-a:hover {
-    color: #777777;
-    font-family: 'Neo Sans Pro Light';
-    font-size: 16pt;
-    cursor: auto;
-    text-decoration: underline;
-}
+        a:hover,
+        a:focus {
+            color: var(--color-text-light);
+            outline: 2px solid currentColor;
+            outline-offset: 2px;
+        }
 
-.current {
-    color: #333333;
-    font-family: 'Neo Sans Pro Regular';
-    font-size: 14pt;
-}
+        /* ========================================
+           Container & Layout
+           ======================================== */
 
-a.menu {
-    color: #333333;
-    font-family: 'Neo Sans Pro Regular';
-    font-size: 15pt;
-    opacity: 0.8;
-    padding: 5px 24px;
-    font-size: 13pt;
-    border: 1px solid #333333;
-    border-radius: 5px;
-    text-decoration: none;
-    margin: 15px;
-}
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+        }
 
-a:hover.menu {
-    color: #ffffff;
-    background-color: #333333;
-    font-family: 'Neo Sans Pro Regular';
-    opacity: 1;
-    text-decoration: none;
-}
+        main {
+            flex: 1;
+        }
 
-a.current.menu {
-    cursor: default;
-    color: #ffffff;
-    background-color: #333333;
-    font-family: 'Neo Sans Pro Regular';
-    text-decoration: none;
-    opacity: 1;
-}
+        /* ========================================
+           Header
+           ======================================== */
 
-.works {
-    color:;
-    text-align: center;
-    font-style: italic;
-}
+        .site-header {
+            padding: var(--spacing-lg) 0;
+            text-align: center;
+        }
 
-.lazy {
-    width: 100%;
-    overflow: hidden;
-}
+        .site-logo {
+            height: 80px;
+            width: auto;
+            margin: 0 auto var(--spacing-lg);
+        }
 
-.lazy.old {
-    width: 75%;
-}
+        .main-nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: var(--spacing-sm);
+        }
 
-.description {
-    text-align: right;
-    padding-left: 50%;
-    padding-right: 12%;
-    font-style: italic;
-}
+        .nav-link {
+            color: var(--color-text);
+            font-family: var(--font-regular);
+            font-size: 0.9375rem;
+            padding: 5px 24px;
+            border: 1px solid var(--color-text);
+            border-radius: var(--radius-md);
+            text-decoration: none;
+            opacity: 0.8;
+            transition: all var(--transition-fast);
+            display: inline-block;
+        }
 
-.mini {
-    width: 85%;
-}
+        .nav-link:hover,
+        .nav-link:focus {
+            color: var(--color-white);
+            background-color: var(--color-text);
+            opacity: 1;
+            outline: none;
+        }
 
-/* Стиль для новых окон */
-.als-browser {
-    display: block !important;
-    overflow: hidden;
-    margin: 20px;
-    margin-top: 60px;
-    text-decoration: none;
-    user-select: none;
-    width: 100%;
-}
+        .nav-link.current {
+            color: var(--color-white);
+            background-color: var(--color-text);
+            opacity: 1;
+            cursor: default;
+            pointer-events: none;
+        }
 
-.als-browser_desktop {
-    max-width: 75%;
-    backdrop-filter: blur(10px);
-    border-radius: 6px;
-    box-shadow: 0 30px 140px -50px rgba(44, 48, 56, 0.5);
-}
+        /* ========================================
+           Projects
+           ======================================== */
 
-@media (max-width: 960px) {
-    .als-browser_desktop {
-        border-radius: 3px;
-    }
-}
+        .portfolio-content {
+            padding: var(--spacing-md) 0;
+        }
 
-.als-browser_desktop .als-browser__topbar {
-    display: flex;
-    height: 40px;
-    align-items: center;
-    justify-content: center;
-    background: #2c3038;
-}
+        .project {
+            margin: var(--spacing-md) auto var(--spacing-xl);
+            max-width: 100%;
+        }
 
-@media (max-width: 960px) {
-    .als-browser_desktop .als-browser__topbar {
-        height: 20px;
-    }
-}
+        .project.featured {
+            margin-top: 0;
+        }
 
-.als-browser_desktop .als-browser__address {
-    display: flex;
-    width: 75%;
-    height: 24px;
-    align-items: center;
-    justify-content: center;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 4px;
-    color: #fff;
-    font-family: "Neo Sans Pro Light", Helvetica, sans-serif;
-    font-size: 13px;
-    text-decoration: none;
-}
+        .project-link {
+            text-decoration: none;
+            display: block;
+        }
 
-@media (max-width: 960px) {
-    .als-browser_desktop .als-browser__address {
-        height: 12px;
-        border-radius: 2px;
-    }
-}
+        .project-link:hover .browser-window,
+        .project-link:focus .browser-window {
+            transform: translateY(-2px);
+        }
 
-@media (max-width: 960px) {
-    .als-browser_desktop .als-browser__address-text {
-        display:;
-        font-size: 10pt;
-    }
-}
+        /* ========================================
+           Browser Window
+           ======================================== */
 
-.tag {
-    color: #ffffff;
-    background-color: rgba(51, 51, 51, 0.7);
-    font-family: 'Neo Sans Pro Light';
-    font-size:;
-    opacity:;
-    padding: 6px;
-    font-size:;
-    font-style: normal;
-    border-radius: 3px;
-    text-decoration: none;
-    text-align: right;
-    line-height: 60px;
-    margin: 7px;
-    white-space: nowrap;
-}
-</style>
+        .browser-window {
+            display: block;
+            overflow: hidden;
+            margin: 0 auto;
+            max-width: 75%;
+            backdrop-filter: blur(10px);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-browser);
+            transition: transform var(--transition-fast);
+        }
+
+        .project-mini .browser-window {
+            max-width: 60%;
+        }
+
+        .browser-topbar {
+            display: flex;
+            height: 40px;
+            align-items: center;
+            justify-content: center;
+            background: var(--color-bg-topbar);
+        }
+
+        .browser-address {
+            display: flex;
+            width: 75%;
+            height: 24px;
+            align-items: center;
+            justify-content: center;
+            background: var(--color-bg-address);
+            border-radius: 4px;
+            color: var(--color-white);
+            font-family: var(--font-light);
+            font-size: 0.8125rem;
+            text-decoration: none;
+        }
+
+        .address-text {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding: 0 10px;
+        }
+
+        .project-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* ========================================
+           Legacy Projects (older screenshots)
+           ======================================== */
+
+        .project.legacy {
+            text-align: center;
+        }
+
+        .project-image-legacy {
+            width: 75%;
+            max-width: 1000px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        /* ========================================
+           Project Details
+           ======================================== */
+
+        .project-details {
+            width: 85%;
+            max-width: 1000px;
+            margin: var(--spacing-md) auto;
+        }
+
+        .detail-item {
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .detail-item.browser-window {
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .detail-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .detail-description {
+            font-style: italic;
+            text-align: right;
+            padding: var(--spacing-sm) 12% var(--spacing-sm) 50%;
+            margin-top: var(--spacing-sm);
+        }
+
+        /* ========================================
+           Mobile Versions Section
+           ======================================== */
+
+        .mobile-versions {
+            text-align: center;
+            margin: var(--spacing-xl) auto;
+        }
+
+        .mobile-screenshot {
+            display: inline-block;
+            width: 20%;
+            margin: 0 2%;
+            vertical-align: top;
+        }
+
+        .mobile-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .project-description.centered {
+            text-align: center;
+            padding: var(--spacing-md) 10%;
+        }
+
+        /* ========================================
+           Tags & Descriptions
+           ======================================== */
+
+        .project-description {
+            text-align: right;
+            padding: var(--spacing-sm) 12% var(--spacing-sm) 50%;
+            font-style: italic;
+            margin-top: var(--spacing-md);
+        }
+
+        .tag {
+            display: inline-block;
+            color: var(--color-white);
+            background-color: var(--color-bg-light);
+            font-family: var(--font-light);
+            padding: 6px;
+            font-style: normal;
+            border-radius: var(--radius-sm);
+            text-decoration: none;
+            margin: var(--spacing-xs);
+            white-space: nowrap;
+            font-size: 0.875rem;
+        }
+
+        .project-description p {
+            margin-top: var(--spacing-sm);
+        }
+
+        /* ========================================
+           Footer
+           ======================================== */
+
+        .site-footer {
+            padding: var(--spacing-lg) 0;
+            text-align: center;
+            font-family: var(--font-light);
+            opacity: 0.7;
+        }
+
+        .site-footer p {
+            margin: 0;
+        }
+
+        /* ========================================
+           JavaScript-enhanced features
+           ======================================== */
+
+        /* Skip Link */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 9999;
+        }
+        
+        .skip-link:focus {
+            top: 0;
+        }
+        
+        /* Screen reader only text */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+        
+        /* Image loading states */
+        img[loading="lazy"] {
+            opacity: 0;
+            transition: opacity 0.3s ease-in;
+        }
+        
+        img.loaded {
+            opacity: 1;
+        }
+        
+        /* Reduced motion override */
+        .reduce-motion *,
+        .reduce-motion *::before,
+        .reduce-motion *::after {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+        }
+        
+        /* Image error fallback */
+        .img-fallback {
+            background: #f0f0f0;
+            border: 2px dashed #ccc;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            font-style: italic;
+        }
+        
+        /* Focus visible enhancement */
+        .js-focus-visible :focus:not(.focus-visible) {
+            outline: none;
+        }
+
+        /* ========================================
+           Responsive Design
+           ======================================== */
+
+        /* Tablets */
+        @media (max-width: 960px) {
+            :root {
+                --spacing-lg: 20px;
+                --spacing-xl: 40px;
+            }
+            
+            .site-logo {
+                height: 60px;
+            }
+            
+            .browser-window {
+                max-width: 90%;
+                border-radius: var(--radius-sm);
+            }
+            
+            .project-mini .browser-window {
+                max-width: 75%;
+            }
+            
+            .browser-topbar {
+                height: 20px;
+            }
+            
+            .browser-address {
+                height: 12px;
+                font-size: 0.625rem;
+            }
+            
+            .project-image-legacy {
+                width: 85%;
+            }
+            
+            .project-details {
+                width: 90%;
+            }
+            
+            .detail-description,
+            .project-description {
+                padding: var(--spacing-sm) 5% var(--spacing-sm) 30%;
+            }
+            
+            .mobile-screenshot {
+                width: 30%;
+                margin: 0 2%;
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 640px) {
+            :root {
+                --spacing-sm: 10px;
+                --spacing-md: 15px;
+                --spacing-lg: 15px;
+                --spacing-xl: 30px;
+            }
+            
+            .site-logo {
+                height: 50px;
+                margin-bottom: var(--spacing-md);
+            }
+            
+            .main-nav {
+                gap: 10px;
+            }
+            
+            .nav-link {
+                padding: 5px 15px;
+                font-size: 0.875rem;
+            }
+            
+            .browser-window,
+            .project-mini .browser-window {
+                max-width: 95%;
+            }
+            
+            .browser-topbar {
+                height: 18px;
+            }
+            
+            .browser-address {
+                width: 85%;
+                height: 10px;
+                font-size: 0.5625rem;
+            }
+            
+            .address-text {
+                padding: 0 5px;
+            }
+            
+            .project-image-legacy {
+                width: 95%;
+            }
+            
+            .project-details {
+                width: 95%;
+            }
+            
+            .detail-description,
+            .project-description {
+                text-align: center;
+                padding: var(--spacing-sm) 5%;
+            }
+            
+            .tag {
+                font-size: 0.75rem;
+                padding: 4px 6px;
+                margin: 5px;
+            }
+            
+            .mobile-screenshot {
+                width: 45%;
+                margin: 0 2.5%;
+            }
+            
+            .mobile-versions {
+                margin: var(--spacing-md) auto;
+            }
+            
+            .project {
+                margin-bottom: var(--spacing-md);
+            }
+        }
+
+        /* Small mobile devices */
+        @media (max-width: 480px) {
+            .nav-link {
+                padding: 4px 12px;
+                font-size: 0.8125rem;
+            }
+            
+            .mobile-screenshot {
+                width: 100%;
+                margin: var(--spacing-sm) 0;
+                display: block;
+            }
+            
+            .tag {
+                display: block;
+                margin: 5px auto;
+                max-width: 200px;
+            }
+        }
+
+        /* ========================================
+           Accessibility
+           ======================================== */
+
+        /* Focus visible for keyboard navigation */
+        *:focus-visible {
+            outline: 2px solid var(--color-text);
+            outline-offset: 2px;
+        }
+
+        /* Reduced motion */
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* High contrast mode */
+        @media (prefers-contrast: high) {
+            :root {
+                --color-text: #000000;
+                --color-bg: #ffffff;
+            }
+            
+            .nav-link,
+            .tag {
+                border-width: 2px;
+            }
+        }
+
+        /* Print styles */
+        @media print {
+            body {
+                background: white;
+                color: black;
+            }
+            
+            .site-header,
+            .site-footer {
+                page-break-after: avoid;
+            }
+            
+            .project {
+                page-break-inside: avoid;
+            }
+            
+            a {
+                text-decoration: underline;
+            }
+            
+            a[href]::after {
+                content: " (" attr(href) ")";
+                font-size: 0.8em;
+            }
+        }
+    </style>
+</head>
 <body>
+    <header class="site-header">
+        <div class="container">
+            <img src="https://rolc.ucoz.ru/2019/facefilatov_logo_2019.png" 
+                 alt="facefilatov - Kirill Filatov's Studio Logo" 
+                 class="site-logo">
+            
+            <nav class="main-nav" role="navigation" aria-label="Main navigation">
+                <a href="#" class="nav-link current" aria-current="page">design</a>
+                <a href="https://kirillfilatov.com/music" class="nav-link">music</a>
+                <a href="https://kirillfilatov.com/video" class="nav-link">video</a>
+            </nav>
+        </div>
+    </header>
 
-    <center>
-        <img src="//rolc.ucoz.ru/2019/facefilatov_logo_2019.png" alt="" align="middle" style="height:80px; margin:30px;"/>
-        <a class="current menu">design</a>
-        <a href="//kirillfilatov.com/music" class="menu">music</a>
-        <a href="//kirillfilatov.com/video" class="menu">video</a>
-        <!--Страница с активной ссылкой НАЧАЛО-->
-        <a href="//kirillfilatov.com" style="text-decoration:none">
-            <div class="als-browser als-browser_desktop" style="margin-top:20px">
-                <div class="als-browser__topbar">
-                    <span class="als-browser__address">
-                        <span class="als-browser__address-text">kirillfilatov.com
-                        </span>
-                    </span>
-                </div>
-                <img class="lazy" src="//rolc.ucoz.ru/Screenshots/shower_intro.gif">
-        </a>
-        </div>
-        <div class="description">
-            <span class=tag>Версия 9.4</span>
-            <span class=tag>15 февраля 2019</span>
-            <br>
-            Затягиваем перезапуск сайта, как только можем. Интригующая видео-заглушка
-        </div>
-        <!--Страница с активной ссылкой КОНЕЦ-->
-        <!--Страница НАЧАЛО-->
-        <div class="als-browser als-browser_desktop">
-            <div class="als-browser__topbar">
-                <span class="als-browser__address">
-                    <span class="als-browser__address-text">kirillfilatov.com
-                    </span>
-                </span>
-            </div>
-            <img class="lazy" data-original="//rolc.ucoz.ru/Screenshots/Screen_Shot_2019-02-21_at_6.46.09_PM.jpg">
-        </div>
-        <div class="description">
-            <span class=tag>Версия 9.3</span>
-            <span class=tag>1 ноября 2018</span>
-            <br>
-            Наляпали заглушку к глобальному обновлению
-        </div>
-        <!--Страница КОНЕЦ-->
-        <!--Страница НАЧАЛО-->
-        <div class="als-browser als-browser_desktop">
-            <div class="als-browser__topbar">
-                <span class="als-browser__address">
-                    <span class="als-browser__address-text">kirillfilatov.com
-                    </span>
-                </span>
-            </div>
-            <img class="lazy" data-original="//rolc.ucoz.ru/Screenshots/home_from_web_plagin_for_safari.png">
-        </div>
-        <div class="description">
-            <span class=tag>Версия 9.2</span>
-            <span class=tag>4 июля 2014</span>
-            <br>
-            Обновление, подготовленное к выходу сингла Paradise
-        </div>
-        <!--Страница КОНЕЦ-->
-        <!--Миниатюра страницы НАЧАЛО-->
-        <div class="als-browser als-browser_desktop" style="width:60%">
-            <div class="als-browser__topbar">
-                <span class="als-browser__address">
-                    <span class="als-browser__address-text">kirillfilatov.com
-                    </span>
-                </span>
-            </div>
-            <img class="lazy" data-original="//rolc.ucoz.ru/Screenshots/paradise_single_screenshot.png">
-        </div>
-        <!--Миниатюра страницы КОНЕЦ-->
-        <!--Старя верстка-->
-        <br>
-        <br>
-        <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok-ehkrana-2014-01-06-v-16.30.07.png">
-        <br>
-        <div class="description">Версия 9. На главной странице Кирилл рассказывает о полностью новом дизайне (10 декабря 2013)</div>
-        <br>
-        <div class=mini>
-            <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok-ehkrana-2013-12-15-v-0.08.46.png">
-            <br>
-            <div class="description">Теперь сайт доступен и на русском языке</div>
-            <br>
-            <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok-ehkrana-2014-01-06-v-16.30.41.png">
-            <br>
-            <div class="description">Добавлены новые детали, улучшена верстка</div>
-            <br>
-            <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok-ehkrana-2014-01-06-v-16.30.50.png">
-            <br>
-            <div class="description">Весь код написан заново, повышена скорость загрузки страниц</div>
-            <br>
-            <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok-ehkrana-2014-01-06-v-16.30.55.png">
-            <br>
-            <div class="description">Никакого flash, всё летает на HTML 5</div>
-            <br>
-            <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok-ehkrana-2014-01-06-v-16.31.04.png">
-            <br>
-            <div class="description">Огромное количество элементов гармонирует между собой</div>
-            <br>
-            <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok-ehkrana-2014-01-06-v-16.32.18.png">
-            <br>
-            <div class="description">Общим стилем объединены все промо страницы</div>
-        </div>
-        <br>
-        <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2013-11-03_v_20.25.35_kopija.jpf">
-        <br>
-        <div class="description">Версия 8.6. Промо страница музыкального клипа (1 сентября)</div>
-        <br>
-        <div class=mini>
-            <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2013-11-03_v_20.25.47_kopija.jpf">
-        </div>
-        <br>
-        <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2013-07-26_v_13.17.47.jpf">
-        </div>
-        <br>
-        <div class="description">Версия 8.5. Лайтовое обновление в связи с выходом нового сингла (1 июля 2013)</div>
-        </br>
-        <center>
-            <div class=mini>
-                <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2013-07-26_v_13.22.59_kopija.jpf">
-            </div>
-            <br>
-            <div class="description">Очень красивая стилизация официальной страницы сингла</div>
-            <br>
-            <img style="width:20%" class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2013-06-14_v_11.07.02_kopija.jpf">
-            <img style="width:20%" class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2013-06-14_v_11.08.02_kopija.jpf">
-            <br>
-            <div class="description">Версия 8.4. С выходом нового журнала мы адаптировали сайт под мобильные браузеры (1 мая 2013)</div>
-            <br>
-            <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2013-04-04_v_20.28.56.jpf">
-            <br>
-            <div class="description">Версия 8.3. Сохраняем прекрасный стиль от предыдущей версии и презентуем первый студийный альбом (31 марта 2013)</div>
-            <br>
-            <div class=mini>
-                <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2013-04-04_v_20.39.29.jpf">
-                <br>
-                <div class="description">Появляется очень удобный обзор всего новенького</div>
-                <br>
-                <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2013-04-04_v_20.40.05.jpf">
-            </div>
-            <br>
-            <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2013-03-31_v_10.41.04.jpf">
-            <br>
-            <div class="description">Версия 8.2. Стиль сохраняется, меняется только содержание (26 февраля 2013)</div>
-            <br>
-            <div class=mini>
-                <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2013-03-31_v_10.41.44.jpf">
-            </div>
-            <br>
-            <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2013-01-30_v_15.32.45.png">
-            <br>
-            <div class="description">Версия 8.1. Дизайн в новой версии остался прежним, только обновились некоторые страницы с релизом клипа (27 января 2013)</div>
-            <br>
-            <div class=mini>
-                <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2013-01-30_v_15.33.28.png">
-                <br>
-                <div class="description">На сайте появилась вкладка с видео</div>
-                <br>
-                <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2013-01-30_v_15.34.29.png">
-                <br>
-                <div class="description">Теперь у каждого клипа и фильма будет своя страничка</div>
-            </div>
-            <br>
-            <img class="lazy old" data-original="//rolc.ucoz.ru/2/v17_0_enter.png">
-            <br>
-            <div class="description">Версия 8. Глобальное обновление всего дизайна (31 декабря 2012)</div>
-            <br>
-            <div class=mini>
-                <img class="lazy old" data-original="//rolc.ucoz.ru/2/v17_0_home.png">
-                <br>
-                <div class="description">Впервые открыт онлайн-магазин</div>
-                <br>
-                <img class="lazy old" data-original="//rolc.ucoz.ru/2/v17_0_about.png">
-                <br>
-                <div class="description">Теперь все страницы связывает один общий стиль</div>
-            </div>
-            <br>
-            <img class="lazy old" data-original="//rolc.ucoz.ru/2/v3_0_store.png">
-            <br>
-            <div class="description">Версия 2. Магазин сверстан так, чтобы покупатель увидел весь ассортимент сразу (31 декабря 2012)</div>
-            <br>
-            <div class=mini>
-                <img class="lazy old" data-original="//rolc.ucoz.ru/2/v3_0_t-short.png">
-                <br>
-                <div class="description">На страницах товаров ничего не отвлекат от покупки</div>
-            </div>
-            <br>
-            <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2012-11-03_v_18.49.19.png">
-            <br>
-            <div class="description">Версия 7.3. Сайту уже 2 года (10 декабря 2012)</div>
-            <br>
-            <div class=mini>
-                <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2012-12-09_v_22.42.29.png">
-                <br>
-                <div class="description">На фоне видно какие эскизы рисуются, чтобы создать сайт</div>
-            </div>
-            <br>
-            <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2012-09-04_v_18.56.00.png">
-            <br>
-            <div class="description">Версия 7.2. Объединение с сайтом Солнечного Города на время релиза первого студийного албома (22 августа 2012)</div>
-            <br>
-            <div class=mini>
-                <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2012-09-04_v_18.57.34.png">
-                <br>
-                <div class="description">Создали диджитал буклет в стиле альбома</div>
-                <br>
-                <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2012-09-08_v_17.17.03.png">
-                <br>
-                <div class="description">Много солнечного и на официальной странице альбома</div>
-            </div>
-            <br>
-            <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2012-08-09_v_10.48.03.png">
-            <br>
-            <div class="description">Версия 7.1. Новая рекламная кампания (9 августа 2012)</div>
-            <br>
-            <div class=mini>
-                <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2012-08-09_v_10.48.46.png">
-                <br>
-                <div class="description">Всё просто, ничего лишнего. Как и в здоровом образе жизни</div>
-            </div>
-            <br>
-            <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2012-07-21_v_19.13.13.png">
-            <br>
-            <div class="description">Версия 7. Решаем сделать меню прямо на главной странице (12 июля 2012)</div>
-            <br>
-            <div class=mini>
-                <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2012-07-21_v_20.19.25_copy.png">
-            </div>
-            <br>
-            <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2012-06-15_v_13.25.34.png">
-            <br>
-            <div class="description">Версия 6.2. Видео на главной странице (3 июня 2012)</div>
-            <br>
-            <div class=mini>
-                <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2012-06-15_v_13.26.27.png">
-            </div>
-            <br>
-            <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2012-05-09_v_23.32.05.png">
-            <br>
-            <div class="description">Версия 6.1. Прощание с эрой Detskaya (9 мая 2012)</div>
-            <br>
-            <div class=mini>
-                <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2012-05-09_v_23.32.18.png">
-            </div>
-            <br>
-            <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2012-05-04_v_11.27.03.png">
-            <br>
-            <div class="description">Версия 6. Первый журнал (1 мая 2012)</div>
-            <br>
-            <div class=mini>
-                <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2012-05-04_v_11.27.16.png">
-                <br>
-                <div class="description">Впервые мы применили технологию HTML5 для анимации</div>
-            </div>
-            <br>
-            <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2012-05-09_v_00.47.11.png">
-            <br>
-            <div class="description">Версия 1.1. Бета-версия магазина (1 мая 2012)</div>
-            <br>
-            <div class=mini>
-                <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2012-05-04_v_11.41.45.png">
-                <br>
-                <div class="description">Дизайн магазина польностью подчиняется дизайну сайта</div>
-                <br>
-                <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2012-05-04_v_11.42.00.png">
-                <br>
-                <div class="description">На странице товара необходимая информация и оформление покупки</div>
-                <br>
-                <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2012-05-04_v_11.42.09.png">
-                <br>
-                <div class="description">Некоторые товары можно бесплатно скачать прямо online</div>
-            </div>
-            <br>
-            <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2012-03-02_v_13.41.51.png">
-            <br>
-            <div class="description">Версия 1.0. Сайту kirillfilatov.com потребовался магазин. Мы создали заглушку, начали работать (1 марта 2012)</div>
-            <br>
-            <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2012-03-02_v_13.37.46.png">
-            <br>
-            <div class="description">Версия 5.4. Забабацали небольшой редизайн всего сайта (1 марта 2012)</div>
-            <br>
-            <div class=mini>
-                <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2012-03-02_v_13.39.54.png">
-                <br>
-                <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2012-03-02_v_13.40.55.png">
-                <br>
-                <div class="description">Темное настроение зашкаливает</div>
-                <br>
-                <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2012-03-02_v_13.41.13.png">
-            </div>
-            <br>
-            <img class="lazy old" data-original="//rolc.ucoz.ru/2/rem_en.png">
-            <br>
-            <div class="description">Версия 5.3. За день до нового года выходит долгожданный альбом ремиксов (31 декабря 2011)</div>
-            <br>
-            <div class=mini>
-                <img class="lazy old" data-original="//rolc.ucoz.ru/2/rem_ho.png">
-                <br>
-                <img class="lazy old" data-original="//rolc.ucoz.ru/2/rem_pa.png">
-                <br>
-                <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2012-01-02_v_19.48.56.png">
-                <br>
-                <div class="description">Специально в стиле сайта
-                был разработан iTunes LP</div>
-            </div>
-            <br>
-            <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2011-12-10_v_17.12.30.png">
-            <br>
-            <div class="description">Версия 5.2. Сайту исполнился год, и мы собрали все главные страницы на одном торте (10 декабря 2011)</div>
-            <br>
-            <div class=mini>
-                <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2011-12-10_v_17.12.54.png">
-            </div>
-            <br>
-            <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2011-12-04_v_0.54.39.png">
-            <br>
-            <div class="description">Версия 5.1. На фоне льда стал доступен предзаказ на ремиксы (1 декабря 2011)</div>
-            <br>
-            <div class=mini>
-                <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2011-11-28_v_0.51.01.png">
-                <br>
-                <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2011-12-04_v_0.55.01.png">
-                <br>
-                <div class="description">Страница альбома пока немного замаскирована до релиза</div>
-                <br>
-                <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_preorder.png">
-                <br>
-                <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2011-12-04_v_0.56.51.png">
-            </div>
-            <br>
-            <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2011-11-21_v_12.45.07.png">
-            <br>
-            <div class="description">Версия 5. Анонс нового альбома ремиксов прямо на главной странице 21 ноября 2011)</div>
-            <br>
-            <div class=mini>
-                <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2011-11-21_v_12.48.31.png">
-                <br>
-                <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2011-11-21_v_12.48.49.png">
-                <br>
-                <div class="description">Обновлен раздел фотографий</div>
-            </div>
-            <br>
-            <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2011-11-05_v_19.03.49.png">
-            <br>
-            <div class="description">Версия 4.2. Интригующая реклама нового видео (5 ноября 2011)</div>
-            <br>
-            <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2011-10-09_v_22.08.28.png">
-            <br>
-            <div class="description">Версия 4.1. (9 октября 2011)</div>
-            <br>
-            <div class=mini>
-                <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2011-10-09_v_22.59.01.png">
-            </div>
-            <br>
-            <img class="lazy old" data-original="//rolc.ucoz.ru/2/thecallsnimok.png">
-            <br>
-            <div class="description">Версия 4. Впервые интеграция с социальными сетями (9 июля 2011)</div>
-            <br>
-            <div class=mini>
-                <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_home_call.png">
-                <br>
-                <img class="lazy old" data-original="//rolc.ucoz.ru/2/snimok_ehkrana_2011-10-09_v_22.25.40.png">
-            </div>
-            <br>
-            <img class="lazy old" data-original="//rolc.ucoz.ru/ioui.png">
-            <br>
-            <div class="description">Версия 3.1. Новый сингл (1 мая 2011)</div>
-            <br>
-            <div class=mini>
-                <img class="lazy old" data-original="//rolc.ucoz.ru/brydrt.png">
-                <br>
-                <div class="description">Впервые интеграция с iTunes</div>
-                <br>
-                <img class="lazy old" data-original="//rolc.ucoz.ru/jfgk.png">
-                <br>
-                <img class="lazy old" data-original="//rolc.ucoz.ru/gkh.png">
-            </div>
-            <br>
-            <img class="lazy old" data-original="//rolc.ucoz.ru/9grshg.png">
-            <br>
-            <div class="description">Версия 3. Доступен предзаказ на новый сингл Кирилла Филатова (10 апреля 2011)</div>
-            <br>
-            <img class="lazy old" data-original="//rolc.ucoz.ru/snimok_ehkrana_10.png">
-            <br>
-            <div class="description">Версия 2.1. Релиз альбома Солнечного Города (26 февраля 2011)</div>
-            <br>
-            <div class=mini>
-                <img class="lazy old" data-original="//rolc.ucoz.ru/snimok_ehkrana_11.png">
-                <br>
-                <img class="lazy old" data-original="//rolc.ucoz.ru/snimok_ehkrana_12.png">
-                <br>
-                <div class="description">Специально был создан дизайн страницы на myspace</div>
-            </div>
-            <br>
-            <img class="lazy old" data-original="//rolc.ucoz.ru/snimok_ehkrana_3.png">
-            <br>
-            <div class="description">Версия 2. Специальная праздничная стилизация ко Дню Святого Валентина (14 февраля 2011)</div>
-            <br>
-            <div class=mini>
-                <img class="lazy old" data-original="//rolc.ucoz.ru/s2nimok_ehkrana_5.png">
-                <br>
-                <!--Миниатюра страницы НАЧАЛО-->
-                <div class="als-browser als-browser_desktop" style="width:80%">
-                    <div class="als-browser__topbar">
-                        <span class="als-browser__address">
-                            <span class="als-browser__address-text">kirillfilatov.com/vo_frantsuzskoy_storone_single
-                            </span>
-                        </span>
-                    </div>
-                    <img class="lazy" data-original="//rolc.ucoz.ru/2snimok_ehkrana_4.png">
-                </div>
-                <!--Миниатюра страницы КОНЕЦ-->
-                <br>
-                <img class="lazy old" data-original="//rolc.ucoz.ru/vayrnvvapro.png">
-                <br>
-                <div class="description">Версия 1.2. Релиз первого сингла (31 декабря 2010)</div>
-                <br>
-                <div class=mini>
-                    <div class="als-browser als-browser_desktop" style="width:80%">
-                        <div class="als-browser__topbar">
-                            <span class="als-browser__address">
-                                <span class="als-browser__address-text">kirillfilatov.com
-                                </span>
+    <main class="portfolio-content">
+        <div class="container">
+            
+            <!-- Featured Project -->
+            <article class="project featured">
+                <a href="https://kirillfilatov.com" class="project-link" aria-label="Visit current website">
+                    <div class="browser-window">
+                        <div class="browser-topbar">
+                            <span class="browser-address">
+                                <span class="address-text">kirillfilatov.com</span>
                             </span>
                         </div>
-                        <img class="lazy" data-original="//rolc.ucoz.ru/Kirill_Filatov-Store.png">
+                        <img src="https://rolc.ucoz.ru/Screenshots/shower_intro.gif" 
+                             alt="Current website featuring animated video introduction"
+                             class="project-image"
+                             loading="eager">
                     </div>
-                    <!--Миниатюра страницы КОНЕЦ-->
-                    <br>
-                    <img class="lazy old" data-original="//rolc.ucoz.ru/snimok_ehkrana_1.png">
-                    <br>
-                    <div class="description">Версия 1.1. Сайт открыт и уже доступен предзаказ на первый сингл (10 декабря 2010)</div>
-                    <br>
-                    <img class="lazy old" data-original="//rolc.ucoz.ru/snimok_ehkrana_30.png">
-                    <br>
-                    <div class="description">Версия 1.0. Стартап. Дата назначена (1 декабря 2010)</div>
-                    <br>
-                    <iframe scrolling="no" width="1" height="1" frameborder="0" style="background-color:transparent; overflow:hidden; position:absolute; top:0; left:0; z-index:9999;" id="ga_target"></iframe>
-                    <script type="text/javascript">
-                    (function() {
-                        var analytics_frame = document.getElementById('ga_target');
-                        var analytics_iframe_loaded;
-                        var user_logged_in;
-                        var blog_is_nsfw = 'No';
+                </a>
+                <aside class="project-description">
+                    <span class="tag">Version 9.4</span>
+                    <span class="tag">February 15, 2019</span>
+                    <p>Intriguing video placeholder</p>
+                </aside>
+            </article>
 
-                        var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
-                        var eventer = window[eventMethod];
-                        var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
-                        eventer(messageEvent, function(e) {
-                            var message = (e.data && e.data.split) ? e.data.split(';') : '';
-                            switch (message[0]) {
-                            case 'analytics_iframe_loaded':
-                                analytics_iframe_loaded = true;
-                                postCSMessage();
-                                postGAMessage();
-                                break;
-                            case 'user_logged_in':
-                                user_logged_in = message[1];
-                                postGAMessage();
-                                break;
+            <!-- Version 9.3 -->
+            <article class="project">
+                <div class="browser-window">
+                    <div class="browser-topbar">
+                        <span class="browser-address">
+                            <span class="address-text">kirillfilatov.com</span>
+                        </span>
+                    </div>
+                    <img src="https://rolc.ucoz.ru/Screenshots/Screen_Shot_2019-02-21_at_6.46.09_PM.jpg" 
+                         alt="Website placeholder design for major update"
+                         class="project-image"
+                         loading="lazy">
+                </div>
+                <aside class="project-description">
+                    <span class="tag">Version 9.3</span>
+                    <span class="tag">November 1, 2018</span>
+                    <p>Created placeholder for global update</p>
+                </aside>
+            </article>
+
+            <!-- Version 9.2 -->
+            <article class="project">
+                <div class="browser-window">
+                    <div class="browser-topbar">
+                        <span class="browser-address">
+                            <span class="address-text">kirillfilatov.com</span>
+                        </span>
+                    </div>
+                    <img src="https://rolc.ucoz.ru/Screenshots/home_from_web_plagin_for_safari.png" 
+                         alt="Website redesign for Paradise single release"
+                         class="project-image"
+                         loading="lazy">
+                </div>
+                <aside class="project-description">
+                    <span class="tag">Version 9.2</span>
+                    <span class="tag">July 4, 2014</span>
+                    <p>Update prepared for the Paradise single release</p>
+                </aside>
+            </article>
+
+            <!-- Paradise Single Mini -->
+            <article class="project project-mini">
+                <div class="browser-window">
+                    <div class="browser-topbar">
+                        <span class="browser-address">
+                            <span class="address-text">kirillfilatov.com</span>
+                        </span>
+                    </div>
+                    <img src="https://rolc.ucoz.ru/Screenshots/paradise_single_screenshot.png" 
+                         alt="Paradise single promotional page"
+                         class="project-image"
+                         loading="lazy">
+                </div>
+            </article>
+
+            <!-- Version 9 -->
+            <article class="project legacy">
+                <img src="https://rolc.ucoz.ru/2/snimok-ehkrana-2014-01-06-v-16.30.07.png" 
+                     alt="Version 9 homepage featuring completely new design"
+                     class="project-image-legacy"
+                     loading="lazy">
+                <aside class="project-description">
+                    <span class="tag">Version 9</span>
+                    <span class="tag">December 10, 2013</span>
+                    <p>Kirill discusses the completely new design on the homepage</p>
+                </aside>
+            </article>
+
+            <!-- Version 9 Details -->
+            <section class="project-details">
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/2/snimok-ehkrana-2013-12-15-v-0.08.46.png" 
+                         alt="Website now available in Russian language"
+                         class="detail-image"
+                         loading="lazy">
+                    <p class="detail-description">Now available in Russian language</p>
+                </article>
+
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/2/snimok-ehkrana-2014-01-06-v-16.30.41.png" 
+                         alt="New details added with improved layout"
+                         class="detail-image"
+                         loading="lazy">
+                    <p class="detail-description">Added new details, improved layout</p>
+                </article>
+
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/2/snimok-ehkrana-2014-01-06-v-16.30.50.png" 
+                         alt="Completely rewritten code with faster page loading"
+                         class="detail-image"
+                         loading="lazy">
+                    <p class="detail-description">All code rewritten from scratch, increased page load speed</p>
+                </article>
+
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/2/snimok-ehkrana-2014-01-06-v-16.30.55.png" 
+                         alt="HTML5 implementation, no Flash required"
+                         class="detail-image"
+                         loading="lazy">
+                    <p class="detail-description">No Flash, everything powered by HTML5</p>
+                </article>
+
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/2/snimok-ehkrana-2014-01-06-v-16.31.04.png" 
+                         alt="Harmonious design with numerous elements"
+                         class="detail-image"
+                         loading="lazy">
+                    <p class="detail-description">Numerous elements harmonize with each other</p>
+                </article>
+
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/2/snimok-ehkrana-2014-01-06-v-16.32.18.png" 
+                         alt="Unified style across all promotional pages"
+                         class="detail-image"
+                         loading="lazy">
+                    <p class="detail-description">All promo pages unified by common style</p>
+                </article>
+            </section>
+
+            <!-- Version 8.6 -->
+            <article class="project legacy">
+                <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2013-11-03_v_20.25.35_kopija.jpf" 
+                     alt="Music video promotional page"
+                     class="project-image-legacy"
+                     loading="lazy">
+                <aside class="project-description">
+                    <span class="tag">Version 8.6</span>
+                    <span class="tag">September 1, 2013</span>
+                    <p>Music video promo page</p>
+                </aside>
+            </article>
+
+            <section class="project-details">
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2013-11-03_v_20.25.47_kopija.jpf" 
+                         alt="Music video page detail view"
+                         class="detail-image"
+                         loading="lazy">
+                </article>
+            </section>
+
+            <!-- Version 8.5 -->
+            <article class="project legacy">
+                <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2013-07-26_v_13.17.47.jpf" 
+                     alt="Lightweight update for new single release"
+                     class="project-image-legacy"
+                     loading="lazy">
+                <aside class="project-description">
+                    <span class="tag">Version 8.5</span>
+                    <span class="tag">July 1, 2013</span>
+                    <p>Light update for new single release</p>
+                </aside>
+            </article>
+
+            <section class="project-details">
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2013-07-26_v_13.22.59_kopija.jpf" 
+                         alt="Beautiful stylized official single page"
+                         class="detail-image"
+                         loading="lazy">
+                    <p class="detail-description">Beautiful stylization of the official single page</p>
+                </article>
+            </section>
+
+            <!-- Version 8.4 Mobile -->
+            <section class="mobile-versions">
+                <article class="mobile-screenshot">
+                    <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2013-06-14_v_11.07.02_kopija.jpf" 
+                         alt="Mobile version screenshot 1"
+                         class="mobile-image"
+                         loading="lazy">
+                </article>
+                <article class="mobile-screenshot">
+                    <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2013-06-14_v_11.08.02_kopija.jpf" 
+                         alt="Mobile version screenshot 2"
+                         class="mobile-image"
+                         loading="lazy">
+                </article>
+                <aside class="project-description centered">
+                    <span class="tag">Version 8.4</span>
+                    <span class="tag">May 1, 2013</span>
+                    <p>With the new magazine release, we adapted the site for mobile browsers</p>
+                </aside>
+            </section>
+
+            <!-- Version 8.3 -->
+            <article class="project legacy">
+                <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2013-04-04_v_20.28.56.jpf" 
+                     alt="First studio album presentation"
+                     class="project-image-legacy"
+                     loading="lazy">
+                <aside class="project-description">
+                    <span class="tag">Version 8.3</span>
+                    <span class="tag">March 31, 2013</span>
+                    <p>Maintaining beautiful style from previous version and presenting the first studio album</p>
+                </aside>
+            </article>
+
+            <section class="project-details">
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2013-04-04_v_20.39.29.jpf" 
+                         alt="Convenient overview of all new content"
+                         class="detail-image"
+                         loading="lazy">
+                    <p class="detail-description">Very convenient overview of all new content appears</p>
+                </article>
+
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2013-04-04_v_20.40.05.jpf" 
+                         alt="Additional album content view"
+                         class="detail-image"
+                         loading="lazy">
+                </article>
+            </section>
+
+            <!-- Version 8.2 -->
+            <article class="project legacy">
+                <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2013-03-31_v_10.41.04.jpf" 
+                     alt="Style maintained with updated content"
+                     class="project-image-legacy"
+                     loading="lazy">
+                <aside class="project-description">
+                    <span class="tag">Version 8.2</span>
+                    <span class="tag">February 26, 2013</span>
+                    <p>Style maintained, only content updated</p>
+                </aside>
+            </article>
+
+            <section class="project-details">
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2013-03-31_v_10.41.44.jpf" 
+                         alt="Updated content detail"
+                         class="detail-image"
+                         loading="lazy">
+                </article>
+            </section>
+
+            <!-- Version 8.1 -->
+            <article class="project legacy">
+                <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2013-01-30_v_15.32.45.png" 
+                     alt="Updated pages for video clip release"
+                     class="project-image-legacy"
+                     loading="lazy">
+                <aside class="project-description">
+                    <span class="tag">Version 8.1</span>
+                    <span class="tag">January 27, 2013</span>
+                    <p>Design remained the same, only some pages updated with clip release</p>
+                </aside>
+            </article>
+
+            <section class="project-details">
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2013-01-30_v_15.33.28.png" 
+                         alt="New video tab added to website"
+                         class="detail-image"
+                         loading="lazy">
+                    <p class="detail-description">Video tab added to the site</p>
+                </article>
+
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2013-01-30_v_15.34.29.png" 
+                         alt="Individual pages for each video and film"
+                         class="detail-image"
+                         loading="lazy">
+                    <p class="detail-description">Now each clip and film has its own page</p>
+                </article>
+            </section>
+
+            <!-- Version 8 -->
+            <article class="project legacy">
+                <img src="https://rolc.ucoz.ru/2/v17_0_enter.png" 
+                     alt="Complete design overhaul"
+                     class="project-image-legacy"
+                     loading="lazy">
+                <aside class="project-description">
+                    <span class="tag">Version 8</span>
+                    <span class="tag">December 31, 2012</span>
+                    <p>Global update of entire design</p>
+                </aside>
+            </article>
+
+            <section class="project-details">
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/2/v17_0_home.png" 
+                         alt="Online store opened for first time"
+                         class="detail-image"
+                         loading="lazy">
+                    <p class="detail-description">Online store opened for the first time</p>
+                </article>
+
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/2/v17_0_about.png" 
+                         alt="All pages unified by common style"
+                         class="detail-image"
+                         loading="lazy">
+                    <p class="detail-description">Now all pages linked by one common style</p>
+                </article>
+            </section>
+
+            <!-- Version 2 Store -->
+            <article class="project legacy">
+                <img src="https://rolc.ucoz.ru/2/v3_0_store.png" 
+                     alt="Store layout showing full product range"
+                     class="project-image-legacy"
+                     loading="lazy">
+                <aside class="project-description">
+                    <span class="tag">Version 2</span>
+                    <span class="tag">December 31, 2012</span>
+                    <p>Store designed so buyers see entire range at once</p>
+                </aside>
+            </article>
+
+            <section class="project-details">
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/2/v3_0_t-short.png" 
+                         alt="Product pages with distraction-free purchase focus"
+                         class="detail-image"
+                         loading="lazy">
+                    <p class="detail-description">Nothing distracts from purchase on product pages</p>
+                </article>
+            </section>
+
+            <!-- Version 7.3 -->
+            <article class="project legacy">
+                <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2012-11-03_v_18.49.19.png" 
+                     alt="Website 2nd anniversary design"
+                     class="project-image-legacy"
+                     loading="lazy">
+                <aside class="project-description">
+                    <span class="tag">Version 7.3</span>
+                    <span class="tag">December 10, 2012</span>
+                    <p>Site is already 2 years old</p>
+                </aside>
+            </article>
+
+            <section class="project-details">
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2012-12-09_v_22.42.29.png" 
+                         alt="Background showing design sketches"
+                         class="detail-image"
+                         loading="lazy">
+                    <p class="detail-description">Background shows sketches drawn to create the site</p>
+                </article>
+            </section>
+
+            <!-- Version 7.2 -->
+            <article class="project legacy">
+                <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2012-09-04_v_18.56.00.png" 
+                     alt="Merger with Solar City website"
+                     class="project-image-legacy"
+                     loading="lazy">
+                <aside class="project-description">
+                    <span class="tag">Version 7.2</span>
+                    <span class="tag">August 22, 2012</span>
+                    <p>Merger with Solar City website for first studio album release</p>
+                </aside>
+            </article>
+
+            <section class="project-details">
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2012-09-04_v_18.57.34.png" 
+                         alt="Digital booklet in album style"
+                         class="detail-image"
+                         loading="lazy">
+                    <p class="detail-description">Created digital booklet in album style</p>
+                </article>
+
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2012-09-08_v_17.17.03.png" 
+                         alt="Official album page with sunny theme"
+                         class="detail-image"
+                         loading="lazy">
+                    <p class="detail-description">Lots of sunshine on the official album page too</p>
+                </article>
+            </section>
+
+            <!-- Version 7.1 -->
+            <article class="project legacy">
+                <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2012-08-09_v_10.48.03.png" 
+                     alt="New advertising campaign"
+                     class="project-image-legacy"
+                     loading="lazy">
+                <aside class="project-description">
+                    <span class="tag">Version 7.1</span>
+                    <span class="tag">August 9, 2012</span>
+                    <p>New advertising campaign</p>
+                </aside>
+            </article>
+
+            <section class="project-details">
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2012-08-09_v_10.48.46.png" 
+                         alt="Simple minimalist design approach"
+                         class="detail-image"
+                         loading="lazy">
+                    <p class="detail-description">Everything simple, nothing superfluous. Like in a healthy lifestyle</p>
+                </article>
+            </section>
+
+            <!-- Version 7 -->
+            <article class="project legacy">
+                <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2012-07-21_v_19.13.13.png" 
+                     alt="Menu on homepage design"
+                     class="project-image-legacy"
+                     loading="lazy">
+                <aside class="project-description">
+                    <span class="tag">Version 7</span>
+                    <span class="tag">July 12, 2012</span>
+                    <p>Decided to put menu right on the homepage</p>
+                </aside>
+            </article>
+
+            <section class="project-details">
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2012-07-21_v_20.19.25_copy.png" 
+                         alt="Homepage menu implementation"
+                         class="detail-image"
+                         loading="lazy">
+                </article>
+            </section>
+
+            <!-- Version 6.2 -->
+            <article class="project legacy">
+                <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2012-06-15_v_13.25.34.png" 
+                     alt="Video on homepage"
+                     class="project-image-legacy"
+                     loading="lazy">
+                <aside class="project-description">
+                    <span class="tag">Version 6.2</span>
+                    <span class="tag">June 3, 2012</span>
+                    <p>Video on homepage</p>
+                </aside>
+            </article>
+
+            <section class="project-details">
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2012-06-15_v_13.26.27.png" 
+                         alt="Video homepage detail"
+                         class="detail-image"
+                         loading="lazy">
+                </article>
+            </section>
+
+            <!-- Version 6.1 -->
+            <article class="project legacy">
+                <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2012-05-09_v_23.32.05.png" 
+                     alt="Farewell to Detskaya era"
+                     class="project-image-legacy"
+                     loading="lazy">
+                <aside class="project-description">
+                    <span class="tag">Version 6.1</span>
+                    <span class="tag">May 9, 2012</span>
+                    <p>Farewell to the Detskaya era</p>
+                </aside>
+            </article>
+
+            <section class="project-details">
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2012-05-09_v_23.32.18.png" 
+                         alt="Detskaya era detail"
+                         class="detail-image"
+                         loading="lazy">
+                </article>
+            </section>
+
+            <!-- Version 6 -->
+            <article class="project legacy">
+                <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2012-05-04_v_11.27.03.png" 
+                     alt="First magazine edition"
+                     class="project-image-legacy"
+                     loading="lazy">
+                <aside class="project-description">
+                    <span class="tag">Version 6</span>
+                    <span class="tag">May 1, 2012</span>
+                    <p>First magazine</p>
+                </aside>
+            </article>
+
+            <section class="project-details">
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2012-05-04_v_11.27.16.png" 
+                         alt="HTML5 animation technology implementation"
+                         class="detail-image"
+                         loading="lazy">
+                    <p class="detail-description">For the first time we applied HTML5 technology for animation</p>
+                </article>
+            </section>
+
+            <!-- Version 1.1 Store Beta -->
+            <article class="project legacy">
+                <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2012-05-09_v_00.47.11.png" 
+                     alt="Store beta version"
+                     class="project-image-legacy"
+                     loading="lazy">
+                <aside class="project-description">
+                    <span class="tag">Version 1.1</span>
+                    <span class="tag">May 1, 2012</span>
+                    <p>Store beta version</p>
+                </aside>
+            </article>
+
+            <section class="project-details">
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2012-05-04_v_11.41.45.png" 
+                         alt="Store design matching website design"
+                         class="detail-image"
+                         loading="lazy">
+                    <p class="detail-description">Store design fully complies with website design</p>
+                </article>
+
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2012-05-04_v_11.42.00.png" 
+                         alt="Product page with essential information"
+                         class="detail-image"
+                         loading="lazy">
+                    <p class="detail-description">Product page has necessary information and checkout</p>
+                </article>
+
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2012-05-04_v_11.42.09.png" 
+                         alt="Free online downloads available"
+                         class="detail-image"
+                         loading="lazy">
+                    <p class="detail-description">Some items can be downloaded for free online</p>
+                </article>
+            </section>
+
+            <!-- Version 1.0 Store -->
+            <article class="project legacy">
+                <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2012-03-02_v_13.41.51.png" 
+                     alt="Store placeholder page"
+                     class="project-image-legacy"
+                     loading="lazy">
+                <aside class="project-description">
+                    <span class="tag">Version 1.0</span>
+                    <span class="tag">March 1, 2012</span>
+                    <p>kirillfilatov.com needed a store. We created a placeholder, started working</p>
+                </aside>
+            </article>
+
+            <!-- Version 5.4 -->
+            <article class="project legacy">
+                <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2012-03-02_v_13.37.46.png" 
+                     alt="Small redesign of entire site"
+                     class="project-image-legacy"
+                     loading="lazy">
+                <aside class="project-description">
+                    <span class="tag">Version 5.4</span>
+                    <span class="tag">March 1, 2012</span>
+                    <p>Made small redesign of entire site</p>
+                </aside>
+            </article>
+
+            <section class="project-details">
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2012-03-02_v_13.39.54.png" 
+                         alt="Dark mood design detail"
+                         class="detail-image"
+                         loading="lazy">
+                </article>
+
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2012-03-02_v_13.40.55.png" 
+                         alt="Dark mood theme throughout"
+                         class="detail-image"
+                         loading="lazy">
+                    <p class="detail-description">Dark mood is off the charts</p>
+                </article>
+
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2012-03-02_v_13.41.13.png" 
+                         alt="Additional dark theme detail"
+                         class="detail-image"
+                         loading="lazy">
+                </article>
+            </section>
+
+            <!-- Version 5.3 Remixes -->
+            <article class="project legacy">
+                <img src="https://rolc.ucoz.ru/2/rem_en.png" 
+                     alt="Long-awaited remix album release"
+                     class="project-image-legacy"
+                     loading="lazy">
+                <aside class="project-description">
+                    <span class="tag">Version 5.3</span>
+                    <span class="tag">December 31, 2011</span>
+                    <p>Day before New Year, long-awaited remix album released</p>
+                </aside>
+            </article>
+
+            <section class="project-details">
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/2/rem_ho.png" 
+                         alt="Remix album homepage"
+                         class="detail-image"
+                         loading="lazy">
+                </article>
+
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/2/rem_pa.png" 
+                         alt="Remix album details page"
+                         class="detail-image"
+                         loading="lazy">
+                </article>
+
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2012-01-02_v_19.48.56.png" 
+                         alt="iTunes LP designed in website style"
+                         class="detail-image"
+                         loading="lazy">
+                    <p class="detail-description">iTunes LP was specially developed in site style</p>
+                </article>
+            </section>
+
+            <!-- Version 5.2 Birthday -->
+            <article class="project legacy">
+                <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2011-12-10_v_17.12.30.png" 
+                     alt="Site 1st anniversary celebration"
+                     class="project-image-legacy"
+                     loading="lazy">
+                <aside class="project-description">
+                    <span class="tag">Version 5.2</span>
+                    <span class="tag">December 10, 2011</span>
+                    <p>Site turned one year old, and we gathered all main pages on one cake</p>
+                </aside>
+            </article>
+
+            <section class="project-details">
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2011-12-10_v_17.12.54.png" 
+                         alt="Anniversary cake with all pages"
+                         class="detail-image"
+                         loading="lazy">
+                </article>
+            </section>
+
+            <!-- Version 5.1 Preorder -->
+            <article class="project legacy">
+                <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2011-12-04_v_0.54.39.png" 
+                     alt="Remix preorder on ice background"
+                     class="project-image-legacy"
+                     loading="lazy">
+                <aside class="project-description">
+                    <span class="tag">Version 5.1</span>
+                    <span class="tag">December 1, 2011</span>
+                    <p>Remix preorder available on ice background</p>
+                </aside>
+            </article>
+
+            <section class="project-details">
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2011-11-28_v_0.51.01.png" 
+                         alt="Ice background preorder page"
+                         class="detail-image"
+                         loading="lazy">
+                </article>
+
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2011-12-04_v_0.55.01.png" 
+                         alt="Album page masked until release"
+                         class="detail-image"
+                         loading="lazy">
+                    <p class="detail-description">Album page slightly masked until release</p>
+                </article>
+
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/2/snimok_preorder.png" 
+                         alt="Preorder interface"
+                         class="detail-image"
+                         loading="lazy">
+                </article>
+
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2011-12-04_v_0.56.51.png" 
+                         alt="Additional preorder details"
+                         class="detail-image"
+                         loading="lazy">
+                </article>
+            </section>
+
+            <!-- Version 5 Remix Announcement -->
+            <article class="project legacy">
+                <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2011-11-21_v_12.45.07.png" 
+                     alt="New remix album announcement"
+                     class="project-image-legacy"
+                     loading="lazy">
+                <aside class="project-description">
+                    <span class="tag">Version 5</span>
+                    <span class="tag">November 21, 2011</span>
+                    <p>New remix album announcement right on homepage</p>
+                </aside>
+            </article>
+
+            <section class="project-details">
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2011-11-21_v_12.48.31.png" 
+                         alt="Remix album announcement details"
+                         class="detail-image"
+                         loading="lazy">
+                </article>
+
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2011-11-21_v_12.48.49.png" 
+                         alt="Updated photos section"
+                         class="detail-image"
+                         loading="lazy">
+                    <p class="detail-description">Updated photos section</p>
+                </article>
+            </section>
+
+            <!-- Version 4.2 -->
+            <article class="project legacy">
+                <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2011-11-05_v_19.03.49.png" 
+                     alt="Intriguing new video advertisement"
+                     class="project-image-legacy"
+                     loading="lazy">
+                <aside class="project-description">
+                    <span class="tag">Version 4.2</span>
+                    <span class="tag">November 5, 2011</span>
+                    <p>Intriguing new video advertisement</p>
+                </aside>
+            </article>
+
+            <!-- Version 4.1 -->
+            <article class="project legacy">
+                <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2011-10-09_v_22.08.28.png" 
+                     alt="Version 4.1 update"
+                     class="project-image-legacy"
+                     loading="lazy">
+                <aside class="project-description">
+                    <span class="tag">Version 4.1</span>
+                    <span class="tag">October 9, 2011</span>
+                </aside>
+            </article>
+
+            <section class="project-details">
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2011-10-09_v_22.59.01.png" 
+                         alt="Version 4.1 detail view"
+                         class="detail-image"
+                         loading="lazy">
+                </article>
+            </section>
+
+            <!-- Version 4 Social Integration -->
+            <article class="project legacy">
+                <img src="https://rolc.ucoz.ru/2/thecallsnimok.png" 
+                     alt="First social network integration"
+                     class="project-image-legacy"
+                     loading="lazy">
+                <aside class="project-description">
+                    <span class="tag">Version 4</span>
+                    <span class="tag">July 9, 2011</span>
+                    <p>First social network integration</p>
+                </aside>
+            </article>
+
+            <section class="project-details">
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_home_call.png" 
+                         alt="Social integration homepage"
+                         class="detail-image"
+                         loading="lazy">
+                </article>
+
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/2/snimok_ehkrana_2011-10-09_v_22.25.40.png" 
+                         alt="Social integration detail"
+                         class="detail-image"
+                         loading="lazy">
+                </article>
+            </section>
+
+            <!-- Version 3.1 New Single -->
+            <article class="project legacy">
+                <img src="https://rolc.ucoz.ru/ioui.png" 
+                     alt="New single release"
+                     class="project-image-legacy"
+                     loading="lazy">
+                <aside class="project-description">
+                    <span class="tag">Version 3.1</span>
+                    <span class="tag">May 1, 2011</span>
+                    <p>New single</p>
+                </aside>
+            </article>
+
+            <section class="project-details">
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/brydrt.png" 
+                         alt="First iTunes integration"
+                         class="detail-image"
+                         loading="lazy">
+                    <p class="detail-description">First iTunes integration</p>
+                </article>
+
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/jfgk.png" 
+                         alt="iTunes integration detail 1"
+                         class="detail-image"
+                         loading="lazy">
+                </article>
+
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/gkh.png" 
+                         alt="iTunes integration detail 2"
+                         class="detail-image"
+                         loading="lazy">
+                </article>
+            </section>
+
+            <!-- Version 3 Preorder -->
+            <article class="project legacy">
+                <img src="https://rolc.ucoz.ru/9grshg.png" 
+                     alt="New single preorder available"
+                     class="project-image-legacy"
+                     loading="lazy">
+                <aside class="project-description">
+                    <span class="tag">Version 3</span>
+                    <span class="tag">April 10, 2011</span>
+                    <p>Kirill Filatov's new single preorder available</p>
+                </aside>
+            </article>
+
+            <!-- Version 2.1 Solar City Album -->
+            <article class="project legacy">
+                <img src="https://rolc.ucoz.ru/snimok_ehkrana_10.png" 
+                     alt="Solar City album release"
+                     class="project-image-legacy"
+                     loading="lazy">
+                <aside class="project-description">
+                    <span class="tag">Version 2.1</span>
+                    <span class="tag">February 26, 2011</span>
+                    <p>Solar City album release</p>
+                </aside>
+            </article>
+
+            <section class="project-details">
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/snimok_ehkrana_11.png" 
+                         alt="Solar City album details"
+                         class="detail-image"
+                         loading="lazy">
+                </article>
+
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/snimok_ehkrana_12.png" 
+                         alt="Custom MySpace page design"
+                         class="detail-image"
+                         loading="lazy">
+                    <p class="detail-description">Custom MySpace page design specially created</p>
+                </article>
+            </section>
+
+            <!-- Version 2 Valentine's -->
+            <article class="project legacy">
+                <img src="https://rolc.ucoz.ru/snimok_ehkrana_3.png" 
+                     alt="Valentine's Day special styling"
+                     class="project-image-legacy"
+                     loading="lazy">
+                <aside class="project-description">
+                    <span class="tag">Version 2</span>
+                    <span class="tag">February 14, 2011</span>
+                    <p>Special holiday styling for Valentine's Day</p>
+                </aside>
+            </article>
+
+            <section class="project-details">
+                <article class="detail-item">
+                    <img src="https://rolc.ucoz.ru/s2nimok_ehkrana_5.png" 
+                         alt="Valentine's theme detail"
+                         class="detail-image"
+                         loading="lazy">
+                </article>
+
+                <article class="detail-item browser-window">
+                    <div class="browser-topbar">
+                        <span class="browser-address">
+                            <span class="address-text">kirillfilatov.com/vo_frantsuzskoy_storone_single</span>
+                        </span>
+                    </div>
+                    <img src="https://rolc.ucoz.ru/2snimok_ehkrana_4.png" 
+                         alt="French side single page"
+                         class="detail-image"
+                         loading="lazy">
+                </article>
+            </section>
+
+            <!-- Version 1.2 First Single -->
+            <article class="project legacy">
+                <img src="https://rolc.ucoz.ru/vayrnvvapro.png" 
+                     alt="First single release"
+                     class="project-image-legacy"
+                     loading="lazy">
+                <aside class="project-description">
+                    <span class="tag">Version 1.2</span>
+                    <span class="tag">December 31, 2010</span>
+                    <p>First single release</p>
+                </aside>
+            </article>
+
+            <section class="project-details">
+                <article class="detail-item browser-window">
+                    <div class="browser-topbar">
+                        <span class="browser-address">
+                            <span class="address-text">kirillfilatov.com</span>
+                        </span>
+                    </div>
+                    <img src="https://rolc.ucoz.ru/Kirill_Filatov-Store.png" 
+                         alt="Store interface for first single"
+                         class="detail-image"
+                         loading="lazy">
+                </article>
+            </section>
+
+            <!-- Version 1.1 Opened -->
+            <article class="project legacy">
+                <img src="https://rolc.ucoz.ru/snimok_ehkrana_1.png" 
+                     alt="Website opened with first single preorder"
+                     class="project-image-legacy"
+                     loading="lazy">
+                <aside class="project-description">
+                    <span class="tag">Version 1.1</span>
+                    <span class="tag">December 10, 2010</span>
+                    <p>Site opened and first single preorder already available</p>
+                </aside>
+            </article>
+
+            <!-- Version 1.0 Startup -->
+            <article class="project legacy">
+                <img src="https://rolc.ucoz.ru/snimok_ehkrana_30.png" 
+                     alt="Startup - date set"
+                     class="project-image-legacy"
+                     loading="lazy">
+                <aside class="project-description">
+                    <span class="tag">Version 1.0</span>
+                    <span class="tag">December 1, 2010</span>
+                    <p>Startup. Date set</p>
+                </aside>
+            </article>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2010-2019 Kirill Filatov's Studio. Portfolio archive.</p>
+        </div>
+    </footer>
+
+    <script>
+        /**
+         * facefilatov Portfolio - Modern JavaScript
+         * Handles lazy loading, smooth scrolling, and progressive enhancement
+         */
+
+        (function() {
+            'use strict';
+
+            // ========================================
+            // Lazy Loading Images
+            // ========================================
+            
+            /**
+             * Modern Intersection Observer-based lazy loading
+             */
+            const initLazyLoading = () => {
+                // Check if IntersectionObserver is supported
+                if ('IntersectionObserver' in window) {
+                    const imageObserver = new IntersectionObserver((entries, observer) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                const img = entry.target;
+                                loadImage(img);
+                                observer.unobserve(img);
                             }
-                        }, false);
+                        });
+                    }, {
+                        rootMargin: '50px 0px', // Start loading 50px before image enters viewport
+                        threshold: 0.01
+                    });
 
-                        analytics_frame.src = "https://assets.tumblr.com/analytics.html?_v=9f5febfd57a8a649c598d888f2d9e062#" +
-                        "https://facefilatov.kirillfilatov.com";
-                        function postGAMessage() {
-                            if (analytics_iframe_loaded && user_logged_in) {
-                                var is_ajax = false;
-                                analytics_frame.contentWindow.postMessage(['tick_google_analytics', is_ajax, user_logged_in, blog_is_nsfw, '/?route=%2F'].join(';'), analytics_frame.src.split('/analytics.html')[0]);
+                    // Observe all images with loading="lazy"
+                    const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+                    lazyImages.forEach(img => {
+                        imageObserver.observe(img);
+                    });
+                } else {
+                    // Fallback for browsers without IntersectionObserver
+                    loadAllImages();
+                }
+            };
+
+            /**
+             * Load individual image
+             */
+            const loadImage = (img) => {
+                if (img.dataset.src) {
+                    img.src = img.dataset.src;
+                    img.classList.add('loaded');
+                    
+                    // Remove data-src after loading
+                    delete img.dataset.src;
+                }
+            };
+
+            /**
+             * Fallback: load all images immediately
+             */
+            const loadAllImages = () => {
+                const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+                lazyImages.forEach(loadImage);
+            };
+
+            // ========================================
+            // Smooth Scrolling
+            // ========================================
+            
+            /**
+             * Add smooth scrolling to all internal links
+             */
+            const initSmoothScrolling = () => {
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener('click', function(e) {
+                        const href = this.getAttribute('href');
+                        
+                        // Skip if href is just "#"
+                        if (href === '#') return;
+                        
+                        const target = document.querySelector(href);
+                        if (target) {
+                            e.preventDefault();
+                            target.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                            
+                            // Update URL without jumping
+                            if (history.pushState) {
+                                history.pushState(null, null, href);
                             }
                         }
-                        function postCSMessage() {
-                            COMSCORE = true;
-                            analytics_frame.contentWindow.postMessage('enable_comscore;' + window.location, analytics_frame.src.split('/analytics.html')[0]);
+                    });
+                });
+            };
+
+            // ========================================
+            // External Link Security
+            // ========================================
+            
+            /**
+             * Add security attributes to external links
+             */
+            const secureExternalLinks = () => {
+                const links = document.querySelectorAll('a[href^="http"]');
+                links.forEach(link => {
+                    // Check if link is external
+                    if (link.hostname !== window.location.hostname) {
+                        // Add security attributes
+                        link.setAttribute('rel', 'noopener noreferrer');
+                        
+                        // Optionally add external link indicator for screen readers
+                        if (!link.querySelector('.sr-only')) {
+                            const srText = document.createElement('span');
+                            srText.className = 'sr-only';
+                            srText.textContent = ' (opens in new tab)';
+                            link.appendChild(srText);
                         }
-                    })();
-                    </script>
-                    <script type="text/javascript" nonce="d2CBQ5xUaq0uNu9KcGn3Nr7bPBk">
-                    !function(s) {
-                        s.src = 'https://px.srvcs.tumblr.com/impixu?T=1768288648&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDovL2ZhY2VmaWxhdG92LmtpcmlsbGZpbGF0b3YuY29tLyIsInJlcXR5cGUiOjAsInJvdXRlIjoiLyJ9&U=BLBIDIAKLL&K=c7f4812ebf23d203b31c5e6dbd3bf08625f90947fb7b4e1b32da04e0384ab29c&R='.replace(/&R=[^&$]*/, '').concat('&R=' + escape(document.referrer)).slice(0, 2000).replace(/%.?.?$/, '');
-                    }(new Image());
-                    </script>
-                    <noscript>
-                        <img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="https://px.srvcs.tumblr.com/impixu?T=1768288648&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDovL2ZhY2VmaWxhdG92LmtpcmlsbGZpbGF0b3YuY29tLyIsInJlcXR5cGUiOjAsInJvdXRlIjoiLyIsIm5vc2NyaXB0IjoxfQ==&U=BLBIDIAKLL&K=5258bad78e33d38c9926b2d997b6e84a451a27a5a0c414edf84f5548342bdbf5&R=">
-                    </noscript>
-                    <iframe id="blue-space-api-calls-iframe" src="https://www.tumblr.com/dashboard/iframe/monetization?tumblelog=facefilatov&src=https%3A%2F%2Ffacefilatov.kirillfilatov.com%2F" style="display: none;" sandbox="allow-scripts allow-same-origin"></iframe>
-                    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous" nonce="d2CBQ5xUaq0uNu9KcGn3Nr7bPBk"></script>
-                    <!--
-                    Open GAM console on the page:
-                    1. Open browser JS console
-                    2. Run `googletag.openConsole()`
-                    3. GAM debug UI should appear and tell some more info on the ad itself and its fulfillment status
-                    -->
-                    <noscript id="bootloader" data-bootstrap="{&quot;Components&quot;:{&quot;PostActivity&quot;:[],&quot;NotificationPoller&quot;:{&quot;messaging_keys&quot;:[],&quot;token&quot;:&quot;&quot;,&quot;inbox_unread&quot;:0},&quot;DesktopDashboardLogo&quot;:{&quot;animations&quot;:[[&quot;https:\/\/assets.tumblr.com\/images\/logo\/hover-animations\/1.png?_v=161861acded461bb6e995593a3bae835&quot;,&quot;https:\/\/assets.tumblr.com\/images\/logo\/hover-animations\/1@2x.png?_v=496a774637302a598c851381d00009b0&quot;]]},&quot;Monetization&quot;:{&quot;client_side_waterfall&quot;:false,&quot;no_demand_reason&quot;:null},&quot;TumblelogIframe&quot;:{&quot;variant&quot;:null,&quot;isCompact&quot;:true,&quot;tumblelogBundleSrc&quot;:&quot;https:\/\/assets.tumblr.com\/client\/prod\/standalone\/tumblelog\/index.build.js?_v=4a1639e90881218a9d0826bd29b5b53a&quot;,&quot;tumblelogName&quot;:&quot;facefilatov&quot;,&quot;isLoggedIn&quot;:false,&quot;isFriend&quot;:false,&quot;formKey&quot;:&quot;&quot;,&quot;canSubscribe&quot;:false,&quot;isSubscribed&quot;:false,&quot;tumblelogTitle&quot;:&quot;facefilatov.kirillfilatov.com&quot;,&quot;tumblelogAvatar&quot;:&quot;https:\/\/64.media.tumblr.com\/avatar_26e466045f41_64.pnj&quot;,&quot;tumblelogAvatar128&quot;:&quot;https:\/\/64.media.tumblr.com\/avatar_26e466045f41_128.pnj&quot;,&quot;tumblelogHost&quot;:&quot;https:\/\/facefilatov.kirillfilatov.com&quot;,&quot;hasCustomDomain&quot;:true,&quot;isOptica&quot;:false,&quot;isCustomTheme&quot;:true,&quot;themeHeaderImage&quot;:&quot;&quot;,&quot;themeBackgroundColor&quot;:&quot;#000000&quot;,&quot;themeTitleColor&quot;:&quot;#444444&quot;,&quot;themeAccentColor&quot;:&quot;#529ECC&quot;,&quot;brag&quot;:false,&quot;canShowAd&quot;:false,&quot;isPremium&quot;:false,&quot;geminiSectionCodeDesktop&quot;:&quot;a10bca9c-0c5d-4a02-ab13-14ab8513d81d&quot;,&quot;geminiSectionCodeMobile&quot;:&quot;ced63809-b609-4aca-96a0-abc099acba6b&quot;,&quot;currentPageType&quot;:&quot;blog&quot;,&quot;currentPage&quot;:1,&quot;searchQuery&quot;:&quot;&quot;,&quot;tag&quot;:&quot;&quot;,&quot;query&quot;:&quot;&quot;,&quot;chrono&quot;:false,&quot;postId&quot;:&quot;&quot;,&quot;src&quot;:&quot;https:\/\/facefilatov.kirillfilatov.com\/&quot;,&quot;postUrl&quot;:&quot;&quot;,&quot;openInPeeprUrl&quot;:&quot;https:\/\/www.tumblr.com\/facefilatov&quot;,&quot;isBlocked&quot;:null,&quot;isAdmin&quot;:false,&quot;lookupButtonUrl&quot;:&quot;&quot;,&quot;showSpamButton&quot;:false,&quot;showRootPostButton&quot;:false,&quot;rootPostUrl&quot;:&quot;&quot;,&quot;showRadarPostButton&quot;:false,&quot;radarKeys&quot;:&quot;&quot;,&quot;isUniblocked&quot;:false,&quot;isNsfw&quot;:false,&quot;isAdult&quot;:false,&quot;isSpam&quot;:false,&quot;isPrimaryBlog&quot;:false,&quot;canEdit&quot;:false,&quot;showRemoveAdsCta&quot;:false,&quot;canReblogSelf&quot;:false,&quot;showLikeButton&quot;:false,&quot;showReblogButton&quot;:false,&quot;reblogUrl&quot;:&quot;&quot;,&quot;showMessagingButton&quot;:false,&quot;loginCheckIframeSrc&quot;:&quot;https:\/\/assets.tumblr.com\/assets\/html\/iframe\/login_check.html?_v=3de94a184d600617102ddd5b48fb36e9&quot;,&quot;appInstallUrls&quot;:{&quot;android&quot;:&quot;https:\/\/play.google.com\/store\/apps\/details?id=com.tumblr\u0026referrer=utm_source%3Dtumblr%26utm_medium%3Diframe%26utm_campaign%3Dbn_continue_or_install_cta&quot;,&quot;ios&quot;:&quot;https:\/\/apps.apple.com\/app\/apple-store\/id305343404?pt=212308\u0026ct=bn_continue_or_install_cta\u0026mt=8&quot;},&quot;appOpenReferrer&quot;:&quot;bn_header_open_btn&quot;,&quot;isShowSearch&quot;:true,&quot;supplyLogging&quot;:[],&quot;secondsSinceLastActivity&quot;:3599,&quot;installUrlOpenFailed&quot;:{&quot;android&quot;:&quot;https:\/\/play.google.com\/store\/apps\/details?id=com.tumblr\u0026referrer=utm_source%3Dtumblr%26utm_medium%3Diframe%26utm_campaign%3Dbn_header_app_open_failed&quot;,&quot;ios&quot;:&quot;https:\/\/apps.apple.com\/app\/apple-store\/id305343404?pt=212308\u0026ct=bn_header_app_open_failed\u0026mt=8&quot;},&quot;loginWallVariant&quot;:&quot;small_center&quot;},&quot;CommunityLabels&quot;:{&quot;has_community_label&quot;:false,&quot;is_single&quot;:false,&quot;redirect_target&quot;:null}},&quot;Flags&quot;:{&quot;features&quot;:&quot;eyJmaWx0ZXJfbnNmdyI6dHJ1ZSwibW9iaWxlX3dlYl9nYXRlIjp0cnVlLCJzYWZlX21vZGUiOnRydWUsInNhZmVfbW9kZV9lbmFibGVkIjp0cnVlLCJrZXljb21tYW5kX2F1dG9fcGFnaW5hdGUiOnRydWUsImxvZ2dlZF9vdXRfc2VhcmNoIjp0cnVlLCJrcmFrZW5fd2ViX2xvZ2dpbmdfbGlicmFyeSI6dHJ1ZSwibGl2ZXBob3Rvc193ZWIiOnRydWUsInVzZXJfdGFnX2ZpbHRlcmluZyI6dHJ1ZSwic2FmZV9tb2RlX293bl9wb3N0Ijp0cnVlLCJwcm9qZWN0X3hfYXBwZWFsIjp0cnVlLCJtb2JpbGVfd2ViX3Bob3Rvc2V0cyI6dHJ1ZSwiaGlkZV9kZWZhdWx0X2hlYWRlcnNfYmxvZ19jYXJkcyI6dHJ1ZSwibm90aWZpY2F0aW9uX3JlcGx5X2xpbmtfdG9fbm90ZXMiOnRydWUsInR5cGluZ19pbmRpY2F0b3Jfd3JpdGUiOnRydWUsInR1bWJscl92aWRlb19zcG9uc29yZWRfZGF5Ijp0cnVlLCJjYXB0Y2hhOnVzZV9yZWNhcHRjaGEyIjp0cnVlLCJsaXR0bGVfc2lzdGVyIjp0cnVlLCJsb2dfbGFkeSI6dHJ1ZSwicmVkcG9wX3Bvc3RfZm9ybV9tb2JpbGVfY3JlYXRlIjp0cnVlLCJsZWdhY3lfcG9zdF9mb3JtX2J1dHRvbnNfbGlua190b19yZWRwb3AiOnRydWUsInNob3dfdHNwX2NsaWNrX3Rocm91Z2hfdG9nZ2xlIjp0cnVlLCJkYXJsYV9hZF9mZWVkYmFjayI6dHJ1ZSwic3RhdHVzX2luZGljYXRvciI6dHJ1ZSwiY29udmVyc2F0aW9uYWxfbm90aWZpY2F0aW9ucyI6dHJ1ZSwiZGlzYWJsZV95YWhvb19iX2Nvb2tpZSI6dHJ1ZSwibGl2ZXBob3RvcyI6dHJ1ZSwiY29tbXVuaXR5X2xhYmVscyI6dHJ1ZSwibW9uZXRpemF0aW9uIjp0cnVlfQ==&quot;},&quot;Context&quot;:{&quot;name&quot;:&quot;default&quot;,&quot;time&quot;:1768288648000,&quot;userinfo&quot;:{&quot;primary&quot;:&quot;&quot;,&quot;name&quot;:&quot;&quot;,&quot;channels&quot;:[]},&quot;hosts&quot;:{&quot;assets_host&quot;:&quot;https:\/\/assets.tumblr.com&quot;,&quot;secure_assets_host&quot;:&quot;https:\/\/assets.tumblr.com&quot;,&quot;www_host&quot;:&quot;https:\/\/www.tumblr.com&quot;,&quot;secure_www_host&quot;:&quot;https:\/\/www.tumblr.com&quot;,&quot;embed_host&quot;:&quot;https:\/\/embed.tumblr.com&quot;,&quot;safe_host&quot;:&quot;https:\/\/safe.txmblr.com&quot;,&quot;platform_host&quot;:&quot;https:\/\/platform.tumblr.com&quot;},&quot;language&quot;:&quot;en_US&quot;,&quot;language_simple&quot;:&quot;en&quot;,&quot;assets&quot;:&quot;https:\/\/assets.tumblr.com\/client\/prod\/&quot;},&quot;Translations&quot;:{&quot;%1$sReport %2$s&#039;s post?%3$sIf it violates our user guidelines, we&#039;ll remove it.%4$s&quot;:&quot;%1$sReport %2$s&#039;s reblog?%3$sIf it violates our user guidelines, we&#039;ll remove it.%4$s&quot;,&quot;%1$sReport %2$s&#039;s reply?%3$sIf it violates our user guidelines, we&#039;ll remove it.%4$s&quot;:&quot;%1$sReport %2$s&#039;s reblog?%3$sIf it violates our user guidelines, we&#039;ll remove it.%4$s&quot;,&quot;%1$sDelete your tip??%2$s&quot;:&quot;%1$sDelete your tip?%2$s&quot;,&quot;Deleting your tip&quot;:&quot;Deleting your tip will only remove it from the replies tab and notes. %1$sYou won&#039;t receive a refund of your tip.%2$s For further help contact %3$sTumblr Support%4$s.&quot;}}"></noscript>
-                    <script src="https://assets.tumblr.com/client/prod/standalone/tumblelog/index.build.js?_v=4a1639e90881218a9d0826bd29b5b53a"></script>
+                    }
+                });
+            };
+
+            // ========================================
+            // Keyboard Navigation Enhancement
+            // ========================================
+            
+            /**
+             * Improve keyboard navigation for projects
+             */
+            const enhanceKeyboardNav = () => {
+                const projects = document.querySelectorAll('.project');
+                
+                projects.forEach((project, index) => {
+                    const link = project.querySelector('a, .browser-window');
+                    if (link && !link.hasAttribute('tabindex')) {
+                        link.setAttribute('tabindex', '0');
+                        
+                        // Add keyboard event for Enter key
+                        link.addEventListener('keydown', (e) => {
+                            if (e.key === 'Enter' && link.tagName !== 'A') {
+                                link.click();
+                            }
+                        });
+                    }
+                });
+            };
+
+            // ========================================
+            // Reduced Motion Support
+            // ========================================
+            
+            /**
+             * Respect user's motion preferences
+             */
+            const respectMotionPreferences = () => {
+                const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+                
+                if (prefersReducedMotion.matches) {
+                    // Disable all transitions and animations
+                    document.body.classList.add('reduce-motion');
+                }
+                
+                // Listen for changes
+                prefersReducedMotion.addEventListener('change', () => {
+                    if (prefersReducedMotion.matches) {
+                        document.body.classList.add('reduce-motion');
+                    } else {
+                        document.body.classList.remove('reduce-motion');
+                    }
+                });
+            };
+
+            // ========================================
+            // Error Image Handling
+            // ========================================
+            
+            /**
+             * Add fallback for broken images
+             */
+            const handleBrokenImages = () => {
+                const images = document.querySelectorAll('img');
+                
+                images.forEach(img => {
+                    img.addEventListener('error', function() {
+                        // Add error class for styling
+                        this.classList.add('img-error');
+                        
+                        // Set alt text as fallback content
+                        if (this.alt) {
+                            const fallback = document.createElement('div');
+                            fallback.className = 'img-fallback';
+                            fallback.textContent = this.alt;
+                            this.parentNode.replaceChild(fallback, this);
+                        }
+                    });
+                });
+            };
+
+            // ========================================
+            // Skip Link for Accessibility
+            // ========================================
+            
+            /**
+             * Add skip to main content link
+             */
+            const addSkipLink = () => {
+                const skipLink = document.createElement('a');
+                skipLink.href = '#main';
+                skipLink.className = 'skip-link';
+                skipLink.textContent = 'Skip to main content';
+                
+                document.body.insertBefore(skipLink, document.body.firstChild);
+                
+                // Add corresponding ID to main element
+                const main = document.querySelector('main');
+                if (main && !main.id) {
+                    main.id = 'main';
+                }
+            };
+
+            // ========================================
+            // Print Optimization
+            // ========================================
+            
+            /**
+             * Optimize page for printing
+             */
+            const optimizeForPrint = () => {
+                window.addEventListener('beforeprint', () => {
+                    // Load all lazy images before printing
+                    loadAllImages();
+                });
+            };
+
+            // ========================================
+            // Initialize Everything
+            // ========================================
+            
+            /**
+             * Main initialization function
+             */
+            const init = () => {
+                // Wait for DOM to be ready
+                if (document.readyState === 'loading') {
+                    document.addEventListener('DOMContentLoaded', runInit);
+                } else {
+                    runInit();
+                }
+            };
+
+            /**
+             * Run all initialization functions
+             */
+            const runInit = () => {
+                initLazyLoading();
+                initSmoothScrolling();
+                secureExternalLinks();
+                enhanceKeyboardNav();
+                respectMotionPreferences();
+                handleBrokenImages();
+                addSkipLink();
+                optimizeForPrint();
+                
+                console.log('facefilatov Portfolio initialized ✓');
+            };
+
+            // Start initialization
+            init();
+
+        })();
+    </script>
 </body>
-<script defer type="application/javascript" id="bilmur" data-provider="tumblr.com" data-service="blognetwork" data-customproperties='{"theme": ""}' nonce="d2CBQ5xUaq0uNu9KcGn3Nr7bPBk" src="https://s0.wp.com/wp-content/js/bilmur.min.js?m=202603"></script>
-<script src="https://assets.tumblr.com/assets/scripts/tumblelog_post_message_queue.js?_v=a8fadfa499d8cb7c3f8eefdf0b1adfdd"></script>
+</html>
