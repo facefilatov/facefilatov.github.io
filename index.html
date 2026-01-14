@@ -224,6 +224,16 @@
             display: block;
         }
 
+        /* Disable all hover effects on featured project */
+        .project.featured .project-link,
+        .project.featured .project-link:hover,
+        .project.featured .project-link:focus,
+        .project.featured .browser-window,
+        .project.featured img {
+            transform: none !important;
+            transition: none !important;
+        }
+
         /* ========================================
            Browser Window
            ======================================== */
@@ -393,6 +403,50 @@
         }
 
         /* ========================================
+           Scroll to Top Button
+           ======================================== */
+
+        .scroll-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--color-bg-light);
+            color: var(--color-white);
+            border: 2px solid var(--color-text);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease, background-color 0.2s ease;
+            z-index: 1000;
+            text-decoration: none;
+            font-size: 24px;
+            line-height: 1;
+        }
+
+        .scroll-to-top.visible {
+            opacity: 0.8;
+            visibility: visible;
+        }
+
+        .scroll-to-top:hover,
+        .scroll-to-top:focus {
+            opacity: 1;
+            background-color: var(--color-text);
+            outline: 2px solid var(--color-white);
+            outline-offset: 2px;
+        }
+
+        .scroll-to-top::before {
+            content: "↑";
+        }
+
+        /* ========================================
            Responsive Design
            ======================================== */
 
@@ -515,6 +569,14 @@
                 margin: 5px;
             }
             
+            .scroll-to-top {
+                bottom: 20px;
+                right: 20px;
+                width: 45px;
+                height: 45px;
+                font-size: 20px;
+            }
+            
             .mobile-screenshot {
                 width: 45%;
                 margin: 0 2.5%;
@@ -610,7 +672,7 @@
         }
     </style>
 </head>
-<body>
+<body id="top">
     <a href="#main" class="skip-link">Skip to main content</a>
 
     <header class="site-header">
@@ -621,8 +683,6 @@
             
             <nav class="main-nav" role="navigation" aria-label="Main navigation">
                 <a href="#" class="nav-link current" aria-current="page">design</a>
-                <a href="https://kirillfilatov.com/music" class="nav-link">music</a>
-                <a href="https://kirillfilatov.com/video" class="nav-link">video</a>
             </nav>
         </div>
     </header>
@@ -1508,6 +1568,8 @@
         </div>
     </main>
 
+    <a href="#top" class="scroll-to-top" aria-label="Scroll to top" id="scrollToTop"></a>
+
     <footer class="site-footer">
         <div class="container">
             <p>&copy; 2010-2026 facefilatov studio</p>
@@ -1522,6 +1584,27 @@
                 if (link.hostname !== window.location.hostname) {
                     link.setAttribute('rel', 'noopener noreferrer');
                 }
+            });
+
+            // Scroll to top button functionality
+            const scrollToTopBtn = document.getElementById('scrollToTop');
+            
+            // Show/hide button based on scroll position
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    scrollToTopBtn.classList.add('visible');
+                } else {
+                    scrollToTopBtn.classList.remove('visible');
+                }
+            });
+
+            // Smooth scroll to top when clicked
+            scrollToTopBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
             });
         });
     </script>
